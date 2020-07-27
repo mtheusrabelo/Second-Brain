@@ -1,0 +1,37 @@
+{
+  "name": "second-brain",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Second Brain",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.1.1",
+    "strapi-admin": "3.1.1",
+    "strapi-utils": "3.1.1",
+    "strapi-plugin-content-type-builder": "3.1.1",
+    "strapi-plugin-content-manager": "3.1.1",
+    "strapi-plugin-users-permissions": "3.1.1",
+    "strapi-plugin-email": "3.1.1",
+    "strapi-plugin-upload": "3.1.1",
+    "strapi-connector-bookshelf": "3.1.1",
+    "knex": "<0.20.0",
+    "pg": "latest"
+  },
+  "author": {
+    "name": "Matheus Freire Rabelo"
+  },
+  "strapi": {
+    "uuid": "770457b8-0242-410f-a323-f8edcb6e1dbd"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

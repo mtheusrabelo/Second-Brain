@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memories",
+  "info": {
+    "name": "Memories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Public": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Memory": {
+      "type": "richtext"
+    },
+    "Links": {
+      "collection": "memories"
+    }
+  }
+}
