@@ -5,6 +5,12 @@ FROM node:12.18.2-slim AS base
     ADD . $APPDIR
 
 FROM base AS development
+    ARG MUID
+    ARG MGID
+    RUN addgroup --gid $MGID --system appuser && \
+        adduser --uid $MUID --system appuser --gid $MGID
+    RUN chown -R appuser:appuser $APPDIR
+    USER appuser
     ENTRYPOINT ["/app/entrypoint.sh"]
 
 FROM base AS production
