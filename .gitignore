@@ -112,3 +112,11 @@ license.txt
 exports
 .cache
 build
+
+
+############################
+# Backups
+############################
+
+backups/*
+!backups/.gitkeep
