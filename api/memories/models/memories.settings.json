@@ -17,13 +17,13 @@
     "Title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Memory": {
       "type": "richtext"
     },
-    "Links": {
-      "collection": "memories"
+    "Tags": {
+      "collection": "tags"
     }
   }
 }
