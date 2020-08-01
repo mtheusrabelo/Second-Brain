@@ -1,0 +1,6 @@
+FALLBACK_FILENAME="second_brain.sql"
+FALLBACK_TIMESTAMP=$(date +%Y%m%d%H%M%S)
+CURRENT_TIMESTAMP="${CURRENT_TIMESTAMP:-$FALLBACK_TIMESTAMP}"
+FILENAME="${FILENAME:-$FALLBACK_FILENAME}"
+
+su - $appuser -m -c "mkdir -p /backups/${CURRENT_TIMESTAMP}; pg_dump second_brain > /backups/${CURRENT_TIMESTAMP}/${FILENAME}"

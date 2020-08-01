@@ -29,11 +29,11 @@ There is a helper command to run the database locally.
 
 Please set the following required env variables:
 
-`SECOND_BRAIN_DB_DATA_FOLDER`, `SECOND_BRAIN_DB_PORT`, `SECOND_BRAIN_DB_USER`, `SECOND_BRAIN_DB_PASSWORD`, `SECOND_BRAIN_DB`
+`SECOND_BRAIN_BACKUP_FOLDER`, `SECOND_BRAIN_DB_DATA_FOLDER`, `SECOND_BRAIN_DB_PORT`, `SECOND_BRAIN_DB_USER`, `SECOND_BRAIN_DB_PASSWORD`, `SECOND_BRAIN_DB`
 
 And then run:
 ```
-$ make run-local-db 
+$ make run-dev-db 
 ```
 
 ## License
