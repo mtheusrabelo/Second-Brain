@@ -13,7 +13,7 @@ This project will be used to store and link memories from my second brain.
 
 Clone this repository:
 ```
-$ git clone git@github.com:matheusrabelo/second-brain.git 
+$ git clone git@github.com:mtheusrabelo/second-brain.git 
 ```
 
 Run the following command:
@@ -38,6 +38,3 @@ $ make run-dev-db
 
 ## License
 MIT
-
-## Author
-Matheus Freire Rabelo
